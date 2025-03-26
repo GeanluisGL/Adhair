@@ -42,9 +42,11 @@ A modern web application with a powerful backend and responsive frontend.
   "react-icons": "^5.5.0",
   "react-router-dom": "^7.2.0"
 }
+```
 
 **Backend Dependencies:**
 ```json
+{
 "dependencies": {
   "cors": "^2.8.5",
   "dotenv": "^16.4.7",
@@ -56,4 +58,5 @@ A modern web application with a powerful backend and responsive frontend.
 "devDependencies": {
   "nodemon": "^3.1.9"
 }
-
+}
+```
