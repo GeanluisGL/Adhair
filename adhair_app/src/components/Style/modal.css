@@ -1,0 +1,73 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    height: 2rem;
+    width: 6rem;
+    background-color: rgb(47, 171, 47);
+    border-radius: 2em;
+    border-color: transparent;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100dvh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    overflow: auto;
+    max-width: 80vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: white;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+    border-radius: 1rem;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 5rem;
+}
+
+.close-modal:hover{
+    background-color: aliceblue;
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: space-between; /* Distribuye los elementos */
+    align-items: stretch; /* Asegura que los elementos se expandan verticalmente */
+    max-width: 100%;
+}
+
+.div1, .div4 {
+    flex: 1 1 48%; /* Ocupa aproximadamente la mitad del ancho */
+    min-height: 80%; /* Simula la altura ocupada en el grid */
+}
+
+.div3, .div5 {
+    flex: 1 1 48%; /* Ocupa la mitad del ancho disponible */
+    min-height: 20%; /* Simula la altura ocupada en el grid */
+}

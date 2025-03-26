@@ -1,0 +1,181 @@
+/* Contenedor de la tabla */
+.table-responsive {
+    overflow-x: auto; /* Permite el scroll horizontal */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin: 0 auto; /* Centra la tabla */
+  }
+  
+  /* Estilos base de la tabla */
+  #table-to-export {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    border-collapse: collapse; /* Elimina el espacio entre celdas */
+    font-size: 0.875rem; /* Tamaño de fuente más pequeño */
+  }
+  
+  /* Estilos para las celdas */
+  #table-to-export th,
+  #table-to-export td {
+    padding: 0.75rem; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    border: 1px solid #dee2e6; /* Borde de las celdas */
+  }
+  
+  /* Estilos para el encabezado de la tabla */
+  #table-to-export thead th {
+    background-color: #343a40; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    font-weight: 600; /* Texto en negrita */
+  }
+  
+  /* Estilos para las filas */
+  #table-to-export tbody tr {
+    transition: background-color 0.3s ease; /* Transición suave al pasar el mouse */
+  }
+  
+  #table-to-export tbody tr:hover {
+    background-color: #f8f9fa; /* Fondo gris claro al pasar el mouse */
+  }
+  
+  /* Estilos para las imágenes en la tabla */
+  #table-to-export img {
+    max-width: 100px; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática */
+    border-radius: 0.5rem; /* Bordes redondeados */
+  }
+  
+  /* Estilos para los botones de acciones */
+  .button-container {
+    display: flex;
+    gap: 0.5rem; /* Espacio entre botones */
+    justify-content: center; /* Centra los botones */
+  }
+  
+
+  /* Contenedor principal */
+    .dd-flex {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    gap: 1rem; /* Espacio entre elementos */
+    padding: 1rem; /* Espaciado interno */
+    background-color: #f8f9fa; /* Fondo claro */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    margin-bottom: 1rem; /* Espacio inferior */
+  }
+  
+  /* Estilos para el título */
+  .dd-flex h3 {
+    margin: 0; /* Elimina el margen predeterminado */
+    font-size: 1.25rem; /* Tamaño de fuente */
+    color: #343a40; /* Color de texto oscuro */
+  }
+  
+  /* Estilos para el input group */
+  .input-group {
+    flex: 1; /* Ocupa el espacio disponible */
+    max-width: 500px; /* Ancho máximo */
+  }
+  
+ 
+  
+  /* Estilos para el botón de PDF */
+  .pdf-button {
+    background-color: transparent; /* Fondo transparente */
+    border: 1px solid #343a40; /* Borde oscuro */
+    color: #343a40; /* Texto oscuro */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+  }
+  
+  .pdf-button:hover {
+    background-color: #343a40; /* Fondo oscuro al pasar el mouse */
+    color: white; /* Texto blanco al pasar el mouse */
+  }
+
+  .buton_A {
+    background-color: transparent; /* Fondo transparente */
+    border: 1px solid #343a40; /* Borde oscuro */
+    color: #343a40; /* Texto oscuro */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+  }
+  
+  .buton_A:hover {
+    background-color: #343a40; /* Fondo oscuro al pasar el mouse */
+    color: white; /* Texto blanco al pasar el mouse */
+  }
+
+    /* Ampliar el tamaño del modal */
+  #modalProducts .modal-dialog {
+    max-width: 800px; /* Ancho máximo del modal */
+    width: 90%; /* Ocupa el 90% del ancho de la pantalla */
+    }
+    /* Estilos para el contenedor de columnas */
+  .modal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    gap: 1.5rem; /* Espacio entre columnas */
+  }
+
+  /* Estilos para cada columna */
+  .modal-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Espacio entre inputs */
+  }
+
+  /* Ajustes para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .modal-grid {
+      grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+  }
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 768px) {
+    #table-to-export {
+      font-size: 0.75rem; /* Reduce el tamaño de la fuente */
+    }
+  
+    #table-to-export th,
+    #table-to-export td {
+      padding: 0.5rem; /* Reduce el espaciado interno */
+    }
+  
+    #table-to-export img {
+      max-width: 80px; /* Reduce el tamaño de las imágenes */
+    }
+  
+    .button-container {
+      flex-direction: column; /* Apila los botones verticalmente */
+      gap: 0.25rem; /* Reduce el espacio entre botones */
+    }
+  
+    .button-container .btn {
+      width: 100%; /* Hace que los botones ocupen todo el ancho */
+      padding: 0.5rem; /* Ajusta el espaciado interno */
+      font-size: 0.75rem; /* Reduce el tamaño de la fuente */
+    }
+  
+    .button-container .btn i {
+      font-size: 0.875rem; /* Ajusta el tamaño de los íconos */
+    }
+
+    .dd-flex {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        align-items: stretch; /* Estira los elementos para ocupar todo el ancho */
+        gap: 0.75rem; /* Reduce el espacio entre elementos */
+      }
+    
+      .dd-flex h3 {
+        text-align: center; /* Centra el título */
+        font-size: 1.125rem; /* Reduce el tamaño de la fuente */
+      }
+    
+      .input-group {
+        max-width: 100%; /* Ocupa todo el ancho disponible */
+      }
+    
+      .dd-flex .btn {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        justify-content: center; /* Centra el contenido */
+      }
+  }

@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+/* Estilos generales */
+.order-view-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb); /* Fondo con gradiente suave */
+  font-family: 'Inter', sans-serif; /* Fuente moderna */
+  padding: 2rem; /* Más espacio alrededor del contenido */
+}
+
+.order-view-content {
+  max-width: 56rem;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+  border-radius: 1rem; /* Bordes más redondeados */
+  padding: 2.5rem; /* Más espacio interno */
+  margin-top: 2.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.05); /* Borde sutil */
+}
+
+.order-view-title {
+  font-size: 2rem; /* Tamaño de fuente más grande */
+  font-weight: 700;
+  color: #1e293b; /* Texto oscuro */
+  text-align: center;
+  margin-bottom: 1.5rem; /* Más espacio debajo del título */
+  position: relative;
+}
+
+.order-view-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #4f46e5; /* Línea decorativa */
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.order-view-subtitle {
+  font-size: 1.25rem;
+  color: #4f46e5; /* Color principal (índigo) */
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.client-info {
+  margin-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05); /* Borde sutil */
+  padding-top: 1.5rem;
+  background: linear-gradient(135deg, #ffffff, #f9fafb); /* Fondo con gradiente */
+  border-radius: 0.75rem; /* Bordes más redondeados */
+  padding: 1.5rem; /* Más espacio interno */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+}
+
+.client-info h4 {
+  font-size: 1.25rem; /* Tamaño de fuente más grande */
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.client-info p {
+  margin: 0.75rem 0;
+  color: #475569; /* Texto gris oscuro */
+  font-size: 1rem;
+}
+
+.product-details {
+  margin-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05); /* Borde sutil */
+  padding-top: 1.5rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffffff, #f9fafb); /* Fondo con gradiente */
+  border-radius: 0.75rem; /* Bordes más redondeados */
+  padding: 1.5rem; /* Más espacio interno */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+}
+
+.product-details h4 {
+  font-size: 1.25rem; /* Tamaño de fuente más grande */
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.product-details img {
+  border-radius: 0.75rem; /* Bordes más redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+  margin: 1rem auto; /* Más espacio alrededor de la imagen */
+  max-width: 250px;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-details img:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+}
+
+.product-details p {
+  margin: 0.75rem 0;
+  color: #475569; /* Texto gris oscuro */
+  font-size: 1rem;
+}
+
+.payment-info {
+  margin-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05); /* Borde sutil */
+  padding-top: 1.5rem;
+  background: linear-gradient(135deg, #ffffff, #f9fafb); /* Fondo con gradiente */
+  border-radius: 0.75rem; /* Bordes más redondeados */
+  padding: 1.5rem; /* Más espacio interno */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+}
+
+.payment-info h4 {
+  font-size: 1.25rem; /* Tamaño de fuente más grande */
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.payment-info p {
+  margin: 0.75rem 0;
+  color: #475569; /* Texto gris oscuro */
+  font-size: 1rem;
+}
+
+.floating-button-container {
+  display: grid;
+  justify-content: stretch; /* Alinea el botón a la derecha */
+}
+
+.email-button {
+  background: linear-gradient(135deg, #4f46e5, #6366f1); /* Gradiente moderno */
+  color: white;
+  padding: 0.75rem 1.5rem; /* Más espacio interno */
+  border: none;
+  border-radius: 0.75rem; /* Bordes más redondeados */
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500; /* Texto más grueso */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.email-button:hover {
+  background: linear-gradient(135deg, #6366f1, #4f46e5); /* Gradiente invertido */
+  transform: translateY(-2px); /* Efecto de elevación */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+}
+
+.email-button:disabled {
+  background: #cbd5e1; /* Gris más claro */
+  cursor: not-allowed;
+  transform: none; /* Sin efecto de elevación */
+}
+
+.back-button {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.back-button button {
+  background: linear-gradient(135deg, #0b881c, #08a71d); /* Gradiente moderno */
+  color: white;
+  padding: 0.75rem 1.5rem; /* Más espacio interno */
+  border: none;
+  border-radius: 0.75rem; /* Bordes más redondeados */
+  font-size: 1rem;
+  font-weight: 500; /* Texto más grueso */
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-button button:hover {
+  background: linear-gradient(135deg, #02ad19, #037512); /* Gradiente invertido */
+  transform: translateY(-2px); /* Efecto de elevación */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+}

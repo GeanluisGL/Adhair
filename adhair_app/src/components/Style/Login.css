@@ -1,0 +1,7 @@
+/* Estilos para el contenedor del botón Returnbtn */
+.return-btn-container {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 20px; /* Distancia desde la parte superior */
+    left: 20px; /* Distancia desde la izquierda */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  }

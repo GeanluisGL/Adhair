@@ -1,0 +1,58 @@
+.card {
+    width: 100%; /* Asegura que la tarjeta ocupe el 100% del contenedor */
+    max-width: 18rem; /* Ancho máximo reducido para hacer las tarjetas más pequeñas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card img:hover {
+    transform: scale(1.07);
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .card {
+      max-width: 100%; /* En pantallas más pequeñas, ocupa el 100% */
+    }
+  }
+
+  .card-image-container {
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+  }
+  
+  .card-img-top {
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
+    height: 100%;
+    width: 100%;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo semitransparente */
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1); /* Cambia el color de los íconos a blanco */
+  }
